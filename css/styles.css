@@ -2,6 +2,10 @@
     margin: 0 auto;
 }
 
+.list-group-item .img-responsive{
+    margin:0;
+}
+
 .bg-black{
     background-color: black;
     height: 20.7rem;
@@ -11,6 +15,10 @@
     background-color: black;
     margin: 0;
     padding: 0;
+}
+
+.list-group-item{
+    margin-right: 5px;
 }
 
 .logo{
@@ -77,6 +85,10 @@ section{
 
 .container h3{
     text-transform: uppercase;
+}
+
+.container ul .name{
+    text-transform: none;
 }
 
 .container p{
