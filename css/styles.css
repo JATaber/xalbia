@@ -19,8 +19,13 @@
     text-align: center;
 }
 
-nav li{
-    text-transform: uppercase;
+ul{
+    list-style: none;
+}
+
+
+.list-group-item{
+    background-color: #0B2A3A;
 }
 
 .bio{
@@ -31,6 +36,20 @@ nav li{
 .info{
     background-color: #0B2A3A;
     color: #E0DEB7;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+.list-unstyled{
+    background-color: #0B2A3A;
+    color: #E0DEB7;
+    padding-bottom: 10px;
+}
+
+.img-responsive{
+    margin: 0 auto;
 }
 
 .keyboard{
@@ -50,8 +69,12 @@ nav li{
     padding-top: 10px;
 }
 
+footer{
+    float: right;
+    text-align: right;
+}
+
 footer ul{
-    list-style: none;
     color: #E0DEB7;
     padding: 0;
 }
