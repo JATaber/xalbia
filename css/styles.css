@@ -1,6 +1,6 @@
 @media (min-width: 768px){
     .img-responsive{
-        margin: 0;
+        margin: 0 auto;
     }
 }
 
@@ -27,6 +27,10 @@
 
 ul{
     list-style: none;
+}
+
+img{
+    margin: 0 auto;
 }
 
 
@@ -57,10 +61,6 @@ h2{
 .keyboard{
     max-width: 100%;
     padding-bottom: 1rem;
-}
-
-img{
-    margin:0;
 }
 
 .container .title{
@@ -100,6 +100,7 @@ caption{
 footer{
     float: right;
     text-align: right;
+    padding-right: 10px;
 }
 
 footer ul{
