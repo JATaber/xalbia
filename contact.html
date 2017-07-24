@@ -49,18 +49,23 @@
 <section class="container">
     <h2>Contact</h2>
     <form>
-        <label class="title" for="name">Name <strong>required</strong></label>
-        <input type="text" id="name" required><label class="info" for="name"></label>
-
-        <label class="title required" for="email">Email <strong>required</strong></label>
-        <input type="email" id="email" required><label class="info" for="email">Must be a valid email address</label>
-
-        <label for="register" hidden></label>
-        <button type="submit" id="register">Register</button>
+        <div class="form-group">
+            <label class="title" for="name">Name <strong>required</strong></label>
+            <input class="form-control" type="text" id="name" required><label class="info" for="name"></label>
+        </div>
+        <div class="form-group">
+            <label class="title required" for="email">Email <strong>required</strong></label>
+            <input class="form-control" type="email" id="email" required><label class="info" for="email">Must be a valid email address</label>
+        </div>
+        <div class="form-group">
+            <label for="inputComments">Comments/Questions</label>
+            <textarea class="form-control" id="inputComments"></textarea>
+        </div>
+        <input class="btn center-block" type="submit" value="SUBMIT">
     </form>
 
 </section>
-<div class="bg-footer">
+<div class="bg-footer  navbar-fixed-bottom">
     <div class="container">
         <footer>
             <ul class="footer-info">

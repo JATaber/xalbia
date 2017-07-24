@@ -134,3 +134,20 @@ footer ul{
 footer ul li a{
     color: #E0DEB7;
 }
+
+/* Styling for the search results */
+
+@media (max-width: 599px){
+
+}
+
+@media (max-width: 600px){
+
+}
+
+@media (min-width: 1200px ){
+    article{
+        width: calc(33% - 2.2rem);
+    }
+
+}
