@@ -24,22 +24,22 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="search.html">search</a>
+                        <a href="search.html">Search</a>
                     </li>
                     <li>
-                        <a href="commands.html">commands</a>
+                        <a href="commands.html">Commands</a>
                     </li>
                     <li>
-                        <a href="affiliates.html">affiliates</a>
+                        <a href="affiliates.html">Affiliates</a>
                     </li>
                     <li>
-                        <a href="schedule.html">schedule</a>
+                        <a href="schedule.html">Schedule</a>
                     </li>
                     <li>
-                        <a href="specs.html">comp specs</a>
+                        <a href="specs.html">Comp Specs</a>
                     </li>
                     <li>
-                        <a href="contact.html">contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -47,14 +47,22 @@
     </header>
 </div>
 <section class="search container">
-    <form class="searchForm">
-        <label for="input">Search for Twitch streams</label>
-        <div class="append">
-            <input type="text" id="input" placeholder="ex. League of Legends" required>
-            <input type="submit" id="search" value="Search">
-        </div>
-        <div id="userFeedback" aria-live="polite"></div>
-    </form>
+    <h2 class="title">Twitch Search</h2>
+    <div class="row">
+        <form class="searchForm col-md-12">
+            <div id="custom-search-input">
+                <div class="input-group col-md-12">
+                    <input type="text" class="form-control input-lg" id="input" placeholder="ex. League of Legends" required>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div id="userFeedback" aria-live="polite"></div>
+        </form>
+    </div>
 </section>
 <section id="results" class="container">
     <h2 id="resultsInfo">results for League of Legends</h2>
@@ -62,10 +70,10 @@
     <section id="searchResults">
 
     </section>
-
-    <a class="button" href="https://twitch.tv">View more on Twitch</a>
-
 </section>
+    <section class="container button">
+            <a class="link" href="https://twitch.tv">View more on Twitch</a>
+    </section>
 <div class="bg-footer">
     <div class="container">
         <footer>
@@ -77,9 +85,10 @@
         </footer>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="javascript/script.js"></script>
 <script src="javascript/search.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 </body>
 </html>

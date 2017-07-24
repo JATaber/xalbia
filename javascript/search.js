@@ -51,10 +51,20 @@ function searchForm(event) {
                     document.querySelector("#userFeedback").innerHTML = '';
 
                     for (var i = 0; i < data.streams.length; i++)  {
-                        searchData += '<article class="r">';
+                        searchData += '<article class="info-base container result col-md-4 col-sm-6">';
                         searchData += '<a href="' + data.streams[i].channel.url + '" target="_blank">';
-                        searchData += '<img src=' + data.streams[i].preview.large + ' alt="preview">';
-                        searchData += '<h3>' + data.streams[i].channel.name + '<strong>' + data.streams[i].channel.game + '</strong></h3>';
+                        searchData += '<img class="img-result img-responsive" src=' + data.streams[i].preview.large +
+                            ' alt="preview">';
+                        searchData += '<div class="result-info overlay">';
+                        searchData += '<h3 class="streamer"><strong>' + data.streams[i].channel.name + '</strong></h3>';
+                        searchData += '<p>' + data.streams[i].channel.game + '</p>';
+                        searchData += '<p><img src="images/icons8-Heart%20Filled-100.png" ' +
+                            'width="20" height="20" class="heart" alt="heart">'
+                            + data.streams[i].channel.followers +'</p>';
+                        searchData += '<p><img src="images/icons8-Eye-96.png" ' +
+                            'width="20" height="20" class="eye" alt="eye">'
+                            + data.streams[i].viewers+'</p>';
+                        searchData += '</div>';
                         searchData += '</a>';
                         searchData += '</article>';
                     }
