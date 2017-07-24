@@ -1,6 +1,6 @@
 @media (min-width: 768px){
     .img-responsive{
-        max-width: 250px;
+        margin: 0;
     }
 }
 
