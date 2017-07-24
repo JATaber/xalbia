@@ -1,7 +1,5 @@
-@media (min-width: 768px){
-    .img-responsive{
-        margin: 0 auto;
-    }
+.img-responsive{
+    margin: 0 auto;
 }
 
 .bg-black{
@@ -63,6 +61,10 @@ h2{
     padding-bottom: 1rem;
 }
 
+section{
+    padding: 5px 0;
+}
+
 .container .title{
     text-align: center;
 }
@@ -78,18 +80,21 @@ h2{
 .tble-one{
     background-color: #0B2A3A;
     color: #E0DEB7;
+    padding: 0;
     margin: 5px;
 }
 
 .tble-two{
     background-color: #3D5C65;
     color: #E0DEB7;
+    padding: 0;
     margin: 5px;
 }
 
 .tble-three{
     background-color: black;
     color: #E0DEB7;
+    padding: 0;
     margin: 5px;
 }
 
