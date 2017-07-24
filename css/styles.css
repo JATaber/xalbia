@@ -1,8 +1,63 @@
-header{
+.bg-black{
     background-color: black;
+    height: 20.7rem;
+}
+
+.bg-footer{
+    background-color: black;
+    margin: 0;
+    padding: 0;
 }
 
 .logo{
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     height: 15.5rem;
-    width: 155px;
+    width: 15.5rem;
+    text-align: center;
+}
+
+
+.bio{
+    color: #E0DEB7;
+    background-color: #3D5C65;
+}
+
+.info{
+    background-color: #0B2A3A;
+    color: #E0DEB7;
+}
+
+.keyboard{
+    max-width: 100%;
+    padding-bottom: 1rem;
+}
+
+.container .title{
+    text-align: center;
+}
+
+.container h3{
+    text-transform: uppercase;
+}
+
+.container p{
+    padding-top: 10px;
+}
+
+footer ul{
+    list-style: none;
+    color: #E0DEB7;
+    padding: 0;
+}
+
+footer ul li{
+
+}
+
+.right{
+    position: fixed;
+    float: right;
 }
