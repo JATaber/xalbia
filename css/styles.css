@@ -19,6 +19,9 @@
     text-align: center;
 }
 
+nav li{
+    text-transform: uppercase;
+}
 
 .bio{
     color: #E0DEB7;
@@ -53,11 +56,6 @@ footer ul{
     padding: 0;
 }
 
-footer ul li{
-
-}
-
-.right{
-    position: fixed;
-    float: right;
+footer ul li a{
+    color: #E0DEB7;
 }
