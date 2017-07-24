@@ -46,6 +46,11 @@ img{
     color: #E0DEB7;
 }
 
+.navbar{
+    z-index: 1001;
+}
+
+
 h2{
     text-transform: uppercase;
 }
@@ -65,7 +70,8 @@ section{
     padding: 5px 0;
 }
 
-.container .title{
+
+.title{
     text-align: center;
 }
 
