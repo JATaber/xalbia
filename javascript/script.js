@@ -129,9 +129,14 @@ submit.addEventListener("click", (event) => {
     let validateEmail = new CheckValidity(emailField);
     let nameError = validateName.getNameMessages();
     let emailError = validateEmail.getEmailMessages();
-    let removeElem = elms => Array.from(elms).forEach(el => el.remove);
+    //let removeElem = elms => Array.from(elms).forEach(el => el.remove);
 
-    removeElem(document.querySelectorAll("error"));
+    //removeElem(document.querySelectorAll("error"));
+    var elem = document.querySelector("error");
+
+    if(elem !== null) {
+        elem.remove();
+    }
 
     if(nameError.length > 0){
         nameError.forEach((err) => {
