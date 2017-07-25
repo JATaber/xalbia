@@ -76,3 +76,72 @@ function show(){
     }
 
 }
+
+
+// Set up submit listener
+var submit = document.querySelector('#formSubmit');
+var nameField = document.querySelector('#name');
+var emailField = document.querySelector('#email');
+
+
+// Create a validity class
+
+class CheckValidity {
+    constructor(input, type) {
+        this.input = input;
+        this.type = type;
+        this.errors = [];
+    }
+
+    addError(message) {
+        this.errors.push(message);
+    }
+
+    getNameMessages(){
+        const status = this.input.validity;
+
+        if(status.valueMissing){
+            this.addError('Must not be left blank');
+        }
+
+        return this.errors;
+    }
+
+    getEmailMessages(){
+        const status = this.input.validity;
+
+        if(status.valueMissing){
+            this.addError('Must not be left blank');
+        }
+
+        if(status.typeMismatch){
+            this.addError('Please enter a valid email address');
+        }
+
+        return this.errors;
+    }
+
+}
+
+submit.addEventListener("click", (event) => {
+    event.preventDefault(); // this will stop the standard form submission.
+    let validateName = new CheckValidity(nameField);
+    let validateEmail = new CheckValidity(emailField);
+    let nameError = validateName.getNameMessages();
+    let emailError = validateEmail.getEmailMessages();
+    let removeElem = elms => Array.from(elms).forEach(el => el.remove);
+
+    removeElem(document.querySelectorAll("error"));
+
+    if(nameError.length > 0){
+        nameError.forEach((err) => {
+            nameField.insertAdjacentHTML('afterend', '<p class="error">'+ err + '</p>');
+        });
+    } else if(emailError.length > 0){
+        emailError.forEach((err) => {
+            emailField.insertAdjacentHTML('afterend', '<p class="error">'+ err + '</p>');
+        });
+    }else {
+        document.getElementById('alert').classList.toggle("show");
+    }
+});

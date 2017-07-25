@@ -51,42 +51,42 @@
         <h3>Have questions or concerns?</h3>
         <h4> Reach out to us directly:</h4>
         <p class="twitterInfo">
-            <img src="images/icons8-Twitter%20Filled-50.png" width="20" height="20" alt="twitter">
+            <img src="images/icons8-Twitter%20Filled-50.png" width="14" height="14" alt="twitter">
             @xalbia1
         </p>
         <p class="contactEmail">
-            <img src="images/icons8-Message-64.png" width="20" height="20" alt="email icon">
+            <img src="images/icons8-Message-64.png" width="14" height="14" alt="email icon">
              xalbia2@gmail.com
         </p>
         <p class="facebookInfo">
-            <img src="images/icons8-Facebook%20Filled-50.png" width="20" height="20"
+            <img src="images/icons8-Facebook%20Filled-50.png" width="14" height="14"
                                      alt="facebook icon"> facebook.com/groups/477364545931341/</p>
         <p class="twitchInfo">
-            <img src="images/icons8-Twitch%20Filled-50.png" width="20" height="20" alt="twitch icon">
+            <img src="images/icons8-Twitch%20Filled-50.png" width="14" height="14" alt="twitch icon">
              twitch.tv/xalbia
         </p>
     </div>
     <div class="form col-md-8">
         <h2 class="title">Contact</h2>
-        <form action="mailto:xalbia2@gmail.com" method="post" enctype="text/plain">
+        <form class="form" enctype="text/plain">
             <div class="form-group">
                 <label class="title" for="name">Name - <strong>required</strong></label>
-                <input class="form-control" type="text" id="name" required><label class="info" for="name"></label>
+                <input class="form-control" type="text" id="name" required><label class="alertInfo" for="name"></label>
             </div>
             <div class="form-group">
                 <label class="title required" for="email">Email - <strong>required</strong></label>
-                <input class="form-control" type="email" id="email" required><label class="info" for="email"></label>
+                <input class="form-control" type="email" id="email" required><label class="alertInfo" for="email"></label>
             </div>
             <div class="form-group">
                 <label for="inputComments">Comments/Questions</label>
                 <textarea class="form-control" id="inputComments"></textarea>
             </div>
-            <input class="btn center-block" type="submit" value="SUBMIT">
+            <button id="formSubmit" class="btn center-block" type="submit">SUBMIT</button>
         </form>
-    </div>
-    <div class="alert">
-
-        
+        <div class="alert" id="alert">
+            <img src="images/circle-check.svg" class="check center-block" alt="check">
+            <h3 class="text-center">Thanks for your Question or Comment!</h3>
+        </div>
     </div>
     <div class="hidden-sm hidden-xs">
         <a href="http://www.jdoqocy.com/click-8342468-12982537" target="_top">
@@ -106,8 +106,8 @@
         </footer>
     </div>
 </div>
+<script src="javascript/script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="javascript/script.js"></script>
 </body>
 </html>
