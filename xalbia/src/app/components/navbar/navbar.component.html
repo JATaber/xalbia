@@ -1,11 +1,25 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="../src/assets/images/textlogo5kbg.png" alt="logo">
+      <img src="./assets/images/textlogo5kbg.png" alt="logo" width="50" height="50">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems" aria-controls="navItems"
             aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
+    <div class="collapse navbar-collapse" id="navItems">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.twitch.tv/xalbia" target="_blank">Stream</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>

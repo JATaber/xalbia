@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import ClickEvent = JQuery.ClickEvent;
 
 @Component({
   selector: 'app-navbar',
